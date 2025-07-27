@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SPOTIFY.CSS"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" aria-label="Sidebar Navigation">
+          <div class="logo" aria-label="Spotify logo">Spotify</div>
+          <ul class="nav-links" role="navigation">
+            <li tabindex="0">Home</li>
+            <li tabindex="0">Search</li>
+            <li tabindex="0">Your Library</li>
+          </ul>
+          <ul class="playlist-links" aria-label="Playlists" role="list">
+            <li tabindex="0">Discover Weekly</li>
+            <li tabindex="0">Release Radar</li>
+            <li tabindex="0">Daily Mix 1</li>
+            <li tabindex="0">Daily Mix 2</li>
+            <li tabindex="0">Top Hits 2024</li>
+            <li tabindex="0">Chill Vibes</li>
+            <li tabindex="0">Workout</li>
+            <li tabindex="0">Jazz Classics</li>
+            <li tabindex="0">Indie Rock</li>
+            <li tabindex="0">Throwback</li>
+          </ul>
+        </aside>
+      
+        <main class="main-content" role="main" aria-label="Main Content">
+          <section class="welcome-section" aria-labelledby="welcome-heading">
+            <h1 id="welcome-heading">Good Evening</h1>
+            <p>Your favorite playlists and albums.</p>
+          </section>
+          <section class="playlist-grid" aria-label="Playlists and Albums">
+            <article class="playlist-card" tabindex="0" aria-label="Discover Weekly playlist">
+              <img src="https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?auto=compress&cs=tinysrgb&h=140" alt="Discover Weekly album cover" />
+              <div class="playlist-info">
+                <h4>Discover Weekly</h4>
+                <p>Playlist by Spotify</p>
+              </div>
+            </article>
+            <article class="playlist-card" tabindex="0" aria-label="Release Radar playlist">
+              <img src="https://images.pexels.com/photos/1659711/pexels-photo-1659711.jpeg?auto=compress&cs=tinysrgb&h=140" alt="Release Radar album cover" />
+              <div class="playlist-info">
+                <h4>Release Radar</h4>
+                <p>Playlist by Spotify</p>
+              </div>
+            </article>
+            <article class="playlist-card" tabindex="0" aria-label="Daily Mix 1 playlist">
+              <img src="https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinysrgb&h=140" alt="Daily Mix 1 album cover" />
+              <div class="playlist-info">
+                <h4>Daily Mix 1</h4>
+                <p>Playlist by Spotify</p>
+              </div>
+            </article>
+            <article class="playlist-card" tabindex="0" aria-label="Chill Vibes playlist">
+              <img src="https://images.pexels.com/photos/416047/pexels-photo-416047.jpeg?auto=compress&cs=tinysrgb&h=140" alt="Chill Vibes album cover" />
+              <div class="playlist-info">
+                <h4>Chill Vibes</h4>
+                <p>Playlist by Spotify</p>
+              </div>
+            </article>
+            <article class="playlist-card" tabindex="0" aria-label="Top Hits 2024 playlist">
+              <img src="https://images.pexels.com/photos/1308660/pexels-photo-1308660.jpeg?auto=compress&cs=tinysrgb&h=140" alt="Top Hits 2024 album cover" />
+              <div class="playlist-info">
+                <h4>Top Hits 2024</h4>
+                <p>Playlist by Spotify</p>
+              </div>
+            </article>
+            <article class="playlist-card" tabindex="0" aria-label="Jazz Classics playlist">
+              <img src="https://images.pexels.com/photos/1633761/pexels-photo-1633761.jpeg?auto=compress&cs=tinysrgb&h=140" alt="Jazz Classics album cover" />
+              <div class="playlist-info">
+                <h4>Jazz Classics</h4>
+                <p>Playlist by Spotify</p>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+      
+      <footer class="player-controls" role="contentinfo" aria-label="Player Controls">
+        <div class="player-now-playing">
+          <img src="https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinysrgb&h=56" alt="Current track cover" />
+          <div class="player-song-info">
+            <span class="song-name">A Beautiful Song</span>
+            <span class="song-artist">Artist Name</span>
+          </div>
+        </div>
+        <div class="player-controls-center">
+          <div class="control-buttons" role="group" aria-label="Playback controls">
+            <button aria-label="Previous track" title="Previous"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="20" viewBox="0 0 24 24" width="20"><path d="M6 6v12l8.5-6zM16 6v12h2V6z"/></svg></button>
+            <button aria-label="Play/Pause" title="Play"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24"><path d="M8 5v14l11-7z"/></svg></button>
+            <button aria-label="Next track" title="Next"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="20" viewBox="0 0 24 24" width="20"><path d="M18 6v12l-8.5-6zM8 6v12H6V6z"/></svg></button>
+          </div>
+          <div class="progress-bar" aria-label="Progress Bar" role="slider" tabindex="0" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <div class="progress-bar-filled"></div>
+            <div class="time-display">
+              <span>1:15</span>
+              <span>3:30</span>
+            </div>
+          </div>
+        </div>
+        <div class="player-extra-controls" role="group" aria-label="Extra controls">
+          <button aria-label="Toggle Shuffle" title="Shuffle"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="18" viewBox="0 0 24 24" width="18"><path d="M21 5h-2.586l-4.707 4.707-1.414-1.414L18.172 3H15V1h6v6zM6 6H4v2l4.293 4.293-1.414 1.414L2 8v8h2l3.293-3.293 1.414 1.414L6 18h12v-2l-4.293-4.293 1.414-1.414L21 14V6H6z"/></svg></button>
+          <button aria-label="Repeat" title="Repeat"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="18" viewBox="0 0 24 24" width="18"><path d="M7 7h10v3l4-4-4-4v3H7v3zm10 10H7v-3l-4 4 4 4v-3h10v-3z"/></svg></button>
+          <button aria-label="Volume" title="Volume"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="18" viewBox="0 0 24 24" width="18"><path d="M7 9v6h4l5 5V4l-5 5H7z"/></svg></button>
+        </div>
+      </footer>
+      
+      </body>
+      </html>
+      
+      
